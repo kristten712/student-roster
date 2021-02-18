@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Switch, BrowserRouter as Router } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles'
 
@@ -11,7 +11,7 @@ import Routes from './Routes'
 
 export default function Main() {
     const appBarHeight = 50 // customized height of MenuBar
-    const classes = useStyles();
+    const classes = useStyles()    
 
     return (
         <StudentProvider>

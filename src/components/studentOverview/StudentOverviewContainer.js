@@ -1,5 +1,6 @@
 import React from 'react'
 import { useHistory } from "react-router-dom"
+import { useStudent } from '../../context/StudentContext'
 
 // button
 import Button from '@material-ui/core/Button'
@@ -10,13 +11,25 @@ import AddCircleIcon from '@material-ui/icons/AddCircle'
 // components
 import StudentTable from './StudentTable'
 
+// const LOCAL_STORAGE_KEY = 'studentRoster.roster'
+
 export default function StudentsContainer() {
-    const classes = useStyles();
+    const classes = useStyles()
     const history = useHistory()
+    // const { students, replaceStudents } = useStudent()
   
     function handleAddStudent() {
       history.push('/new')
-    }  
+    }
+    
+    // useEffect(() => {
+    //     const recipeJSON = localStorage.getItem(LOCAL_STORAGE_KEY)
+    //     if (recipeJSON != null) replaceStudents(JSON.parse(recipeJSON))
+    // }, [])
+
+    // useEffect(() => {
+    //     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(students))
+    // }, [students])
 
     return (
         <div>

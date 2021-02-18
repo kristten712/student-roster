@@ -50,6 +50,10 @@ export function StudentProvider({ children }) {
     setStudents(newStudents)
   }
 
+  function replaceStudents(localStudents) {
+    setStudents(localStudents)
+  }
+
   const value = {
       students,
       selectedStudent,
@@ -60,7 +64,8 @@ export function StudentProvider({ children }) {
       findStudent,
       handleResetNewStudent,
       handleAppendNewStudent,
-      handleDeleteStudent
+      handleDeleteStudent,
+      replaceStudents
   }
 
   return (
