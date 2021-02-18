@@ -68,6 +68,6 @@ const menuListItems = [
     }, 
     {
         name: 'Add New Student',
-        path: '/student-rosternew'
+        path: '/student-roster/new'
     }
 ]
