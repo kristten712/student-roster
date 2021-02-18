@@ -6,7 +6,7 @@ import { makeStyles } from '@material-ui/core/styles'
 import { StudentProvider } from '../context/StudentContext'
 
 // components
-// import MenuBar from './menubar/MenuBar'
+import MenuBar from './menubar/MenuBar'
 import Routes from './Routes'
 
 export default function Main() {
@@ -17,7 +17,7 @@ export default function Main() {
         <StudentProvider>
             <Router>
                 <div className={classes.root}>
-                    {/* <MenuBar appBarHeight={appBarHeight} /> */}
+                    <MenuBar appBarHeight={appBarHeight} />
                     <main className={classes.content}>
                     <div style={{ "height": appBarHeight + 'px' }} />
                         <Switch>
