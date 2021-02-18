@@ -35,7 +35,7 @@ export default function AddStudentContainer() {
     const onSubmit = data => { 
         handleAppendNewStudent({...newStudent, ...data})
         handleResetNewStudent()
-        history.push(`/`)
+        history.push(`/student-roster/`)
     }
 
     return (

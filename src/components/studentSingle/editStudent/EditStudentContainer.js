@@ -34,7 +34,7 @@ export default function EditStudentContainer() {
 
     const onSubmit = data => {
         handleStudentChange(student.id, { ...student, ...data })
-        history.push(`/students/view/${student.id}`)
+        history.push(`/student-roster/students/view/${student.id}`)
     }
 
     return (

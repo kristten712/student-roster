@@ -19,7 +19,7 @@ export default function StudentsContainer() {
     // const { students, replaceStudents } = useStudent()
   
     function handleAddStudent() {
-      history.push('/new')
+      history.push('/student-roster/new')
     }
     
     // useEffect(() => {

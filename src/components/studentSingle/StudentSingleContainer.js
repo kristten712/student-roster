@@ -33,12 +33,12 @@ export default function StudentContainer() {
 
   function handleEditButton(id) {
     handleStudentSelect(id)
-    history.push(`/students/edit/${id}`)
+    history.push(`/student-roster/students/edit/${id}`)
   }
 
   function handleDelete(id) {
     handleDeleteStudent(id)
-    history.push(`/`)
+    history.push(`/student-roster/`)
   }
 
   return (

@@ -10,10 +10,10 @@ import EditStudentContainer from './studentSingle/editStudent/EditStudentContain
 export default function Routes() {
     return (
     <>
-      <Route exact path="/" component={StudentOverviewOverviewContainer} />
-      <Route path="/new" component={AddStudentContainer} />
-      <Route exact path="/students/view/:studentId" component={StudentSingleContainer} />
-      <Route exact path="/students/edit/:studentId" component={EditStudentContainer} />
+      <Route exact path="/student-roster" component={StudentOverviewOverviewContainer} />
+      <Route path="/student-roster/new" component={AddStudentContainer} />
+      <Route exact path="/student-roster/students/view/:studentId" component={StudentSingleContainer} />
+      <Route exact path="/student-roster/students/edit/:studentId" component={EditStudentContainer} />
     </>
     )
 }
