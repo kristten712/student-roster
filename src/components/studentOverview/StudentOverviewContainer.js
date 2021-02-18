@@ -15,7 +15,7 @@ export default function StudentsContainer() {
     const history = useHistory()
   
     function handleAddStudent() {
-      history.push('/students/addnew')
+      history.push('/new')
     }  
 
     return (

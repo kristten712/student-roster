@@ -9,7 +9,7 @@ export const newStudentObj = {
   grade: 0,
   major: '',
   early: true,
-  progress: '',
+  progress: 'Started',
   collegeList: [
   {
       id: uuidv4(),

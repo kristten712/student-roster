@@ -44,6 +44,12 @@ export function StudentProvider({ children }) {
     setStudents(newStudents)
   }
 
+  function handleDeleteStudent(id) {
+    let newStudents = [...students]
+    newStudents = newStudents.filter(student => student.id !== id)
+    setStudents(newStudents)
+  }
+
   const value = {
       students,
       selectedStudent,
@@ -53,7 +59,8 @@ export function StudentProvider({ children }) {
       handleStudentChange,
       findStudent,
       handleResetNewStudent,
-      handleAppendNewStudent
+      handleAppendNewStudent,
+      handleDeleteStudent
   }
 
   return (
