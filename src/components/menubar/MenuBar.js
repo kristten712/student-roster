@@ -64,10 +64,10 @@ const github = {
 const menuListItems = [
     {
         name: 'Student Overview',
-        path: '/' 
+        path: '/student-roster/' 
     }, 
     {
         name: 'Add New Student',
-        path: 'new'
+        path: '/student-rosternew'
     }
 ]
