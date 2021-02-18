@@ -38,7 +38,7 @@ export default function StudentContainer() {
 
   function handleDelete(id) {
     handleDeleteStudent(id)
-    history.push(`/student-roster/`)
+    history.push(`/student-roster`)
   }
 
   return (

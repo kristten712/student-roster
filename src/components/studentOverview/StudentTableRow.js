@@ -17,7 +17,7 @@ export default function StudentTableRow() {
 
   function handleSelectedStudent(student) {
     handleStudentSelect(student.id)
-    history.push(`/students/view/${student.id}`)
+    history.push(`/student-roster/students/view/${student.id}`)
   }
 
   return (
