@@ -64,7 +64,7 @@ const github = {
 const menuListItems = [
     {
         name: 'Student Overview',
-        path: '/student-roster/' 
+        path: '/student-roster' 
     }, 
     {
         name: 'Add New Student',
